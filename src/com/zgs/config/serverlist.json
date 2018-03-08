@@ -1,0 +1,18 @@
+{
+    "serverList": ["全部","10.4.1.158"],
+    "serverConfig": {
+        "10.4.1.158": [{
+            "appDesc": "**平台",
+            "checkUrl": "http://10.4.1.158:8001/healthcheck.jsp",
+            "ip": "10.4.1.158",
+            "pageUrl": "",
+            "port": "8001"
+        }, {
+            "appDesc": "**平台",
+            "checkUrl": "http://10.4.1.158:8002/healthcheck.jsp",
+            "ip": "10.4.1.158",
+            "pageUrl": "",
+            "port": "8002"
+        }]
+    }
+}

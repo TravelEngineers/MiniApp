@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zgs.controller.MainController">
+   <children>
+      <Label layoutX="46.0" layoutY="30.0" text="***平台端口检测" textFill="#2c2f2f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="70.0" text="服务器IP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="select_iplist" layoutX="114.0" layoutY="68.0" prefWidth="150.0" />
+      <Label layoutX="275.0" layoutY="70.0" text="端口">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="select_portlist" layoutX="312.0" layoutY="68.0" prefHeight="23.0" prefWidth="99.0" />
+      <Button fx:id="ip_check_btn" layoutX="424.0" layoutY="68.0" mnemonicParsing="false" text="健康检测" />
+      <Button fx:id="page_check_btn" layoutX="497.0" layoutY="68.0" mnemonicParsing="false" text="页面测试" />
+      <TableView fx:id="t_data_list" layoutX="46.0" layoutY="120.0" prefHeight="197.0" prefWidth="628.0">
+        <columns>
+          <TableColumn fx:id="t_col_ip" prefWidth="119.0" resizable="false" text="IP" />
+          <TableColumn fx:id="t_col_port" prefWidth="61.0" resizable="false" text="Port" />
+            <TableColumn fx:id="t_col_curl" prefWidth="264.0" resizable="false" text="检测地址" />
+            <TableColumn fx:id="t_col_pt" minWidth="3.0" prefWidth="93.0" resizable="false" text="平台" />
+            <TableColumn fx:id="t_col_result" prefWidth="89.0" resizable="false" text="检测结果" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="debug_tips_area" layoutX="46.0" layoutY="373.0" prefHeight="127.0" prefWidth="628.0" />
+      <Label layoutX="46.0" layoutY="343.0" text="检测Debug">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="ping_btn" layoutX="568.0" layoutY="68.0" mnemonicParsing="false" text="Ping" />
+      <Button fx:id="telnet_btn" layoutX="618.0" layoutY="68.0" mnemonicParsing="false" text="Telnet" />
+      <Label layoutX="488.0" layoutY="31.0" text="版本信息:" textFill="#222c2c">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="31.0" text="Shmily_Ver1.0" textFill="#020ae8">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="518.0" text="温馨提示:" textFill="#e81919">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="518.0" text="请连接到内网以后再使用本产品" textFill="#270ae4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
